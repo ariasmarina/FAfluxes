@@ -1,6 +1,4 @@
-#FAfluxes
-
-# Overview
+# FA fluxes - Overview
 This is the accompanying research data and code for the paper "Multiple stressors across ecosystem boundaries: do invasive species and light pollution change the quality of aquatic subsidies to terrestrial predators?" by Arias et al. (submitted to ----)
 
 This study addresses the individual and joint effect of Artificial Light at Night (ALAN) and the invasive signal crayfish (Pacifastacus leniusculus) on the fatty acid (FA) fluxes from aquatic to terrestrial ecosystems in a fully crossed experimental design employed at the Riparian Stream Mesocosm (RSM) facility in Landau, Germany. 
@@ -9,7 +7,7 @@ The FA profile of emergent aquatic insects, represented by chironomids, and ripa
 
 Four datasets are provided, and two new datasets are created.
 
-1. Biomass of emergent aquatic insects 
+#1. Biomass of emergent aquatic insects 
 This dataset contains the biomass of each sample in mg (chiro_bio) collected from three emergence traps in 16 flumes, twice a week, after one, four, and six weeks of stressors exposure (N=288).
 
 ### emergence_biomass.csv
@@ -38,7 +36,7 @@ week: time after initiation of stressor exposure (in weeks, same as above)
 flume: number of each artificial stream of the experimental system (1 to 16). 
 mean.bio: mean emergence biomass (mg/m2/d)
 
-2. Fatty acids composition of chironomids
+#2. Fatty acids composition of chironomids
 This dataset contains the FA composition of chironomid samples (n=10) of the 16 streams of the RSM (four per treatment) after 1, 4 and 6 weeks of exposure to stressors.
 
 ### FA_emergence.csv
@@ -91,7 +89,7 @@ totalFAflux: total FA flux (µg m-2 d-1)
 ARAflux: ARA flux (µg m-2 d-1)
 EPAflux: EPA flux (µg m-2 d-1)
 
-3. Fatty acid composition of Riparian Spiders
+#3. Fatty acid composition of Riparian Spiders
 This dataset contains the FA composition of samples of Tetragnata extensa (n=1) of the 16 streams of the RSM (four per treatment) after 6 weeks of exposure to stressors.
 
 ### FA_spiders.csv
@@ -130,7 +128,7 @@ C20.5_EPA: Eicosapentaenoic acid (µg mg-1)
 C22.2: Docosadienoic acid (µg mg-1)
 C22.6_DHA: Docosahexaenoic acid (µg mg-1)
 
-4. Crayfish activity
+#4. Crayfish activity
 
 ### crayfish.csv
 This dataset contains the weekly records of signal crayfish activity in flumes exposed and non-exposed to ALAN. Individuals were considered “Hidden” when they remain inside the hiding places or in burrows in the sediment, while those visible outside hiding places or walking were considered “Active”. 
