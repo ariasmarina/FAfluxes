@@ -1,5 +1,5 @@
 # FA fluxes - Overview
-This is the accompanying research data and code for the paper "Multiple stressors across ecosystem boundaries: do invasive species and light pollution change the quality of aquatic subsidies to terrestrial predators?" by Arias et al. (submitted to ----)
+This is the accompanying research data and code for the paper "Multiple stressors across ecosystem boundaries: do invasive species and light pollution change the quality of aquatic subsidies to terrestrial predators?" by Arias et al. (submitted to "Global Change Biology")
 
 This study addresses the individual and joint effect of Artificial Light at Night (ALAN) and the invasive signal crayfish (Pacifastacus leniusculus) on the fatty acid (FA) fluxes from aquatic to terrestrial ecosystems in a fully crossed experimental design employed at the Riparian Stream Mesocosm (RSM) facility in Landau, Germany. 
 
