@@ -8,9 +8,9 @@ The FA profile of emergent aquatic insects, represented by chironomids, and ripa
 Four datasets are provided, and two new datasets are created.
 
 #1. Biomass of emergent aquatic insects 
-This dataset contains the biomass of each sample in mg (chiro_bio) collected from three emergence traps in 16 flumes, twice a week, after one, four, and six weeks of stressors exposure (N=288).
-
 ### emergence_biomass.csv
+This dataset contains the biomass of each sample in mg (chiro_bio) collected from three emergence traps in 16 flumes, twice a week, after one, four, and six weeks of stressor exposure (N=288).
+
 treat: treatments; "Control" (no stressors); "Crayfish" (presence of signal crayfish, absence of ALAN); "ALAN" (presence of ALAN, absence of signal crayfish); "ALAN+Crayfish" (presence of both ALAN and signal crayfish).
 week: time after initiation of stressors exposure measured in weeks= one week "Week1", four weeks "Week4", and six weeks "Week6".
 day: sampling was done twice a week, day 1 (d1) and day 2 (d2).
@@ -21,13 +21,13 @@ chiro_bio: biomass (mg) of emerged non-tanypodinae chironomids in each trap
 The code describes the calculation of emergence biomass rate, which will be used later for the calculation of FA fluxes. 
 
 First, emergent biomass was summed among the two sampling days to obtain the total emergence biomass over a week.
-Then, emergent biomass was standarized to 1m2 considering the width of the flume in each section 
+Then, emergent biomass was standardised to 1m2 considering the width of the flume in each section 
 i.e. upper reach (trap "up"): 0.7cm
 i.e. middle reach (trap "mid"): 0.75 cm 
 i.e. downstream reach (trap "down") 0.8 cm
 
 The total biomass per week was then converted to rate (mg/m2/d). Finally, data was averaged among the three traps, obtaining the mean emergence biomass (mg/m2/d) (n=48). 
-A new dataset is created entitled "mean_biomass.csv".
+A new dataset is created, entitled "mean_biomass.csv".
 
 ### mean_biomass.csv
 x: number of observation
@@ -37,9 +37,10 @@ flume: number of each artificial stream of the experimental system (1 to 16).
 mean.bio: mean emergence biomass (mg/m2/d)
 
 #2. Fatty acids composition of chironomids
+### FA_emergence.csv
+
 This dataset contains the FA composition of chironomid samples (n=10) of the 16 streams of the RSM (four per treatment) after 1, 4 and 6 weeks of exposure to stressors.
 
-### FA_emergence.csv
 week: time after initiation of stressors exposure measured in weeks= one week "Week1", four weeks "Week4", and six weeks "Week6". 
 treat: treatments; "Control" (no stressors); "Crayfish" (presence of signal crayfish, absence of ALAN); "ALAN" (presence of ALAN, absence of signal crayfish); "ALAN+Crayfish" (presence of both ALAN and signal crayfish).
 flume: number of each artificial stream of the experimental system (1 to 16). 
