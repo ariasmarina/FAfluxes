@@ -22,12 +22,6 @@
 # crossed experimental design employed at the Riparian Stream Mesocosm (RSM) 
 # facility in Landau, Germany. 
 
-# The FA profile of emergent aquatic insects, represented by chironomids,
-# and riparian predators, represented by the web-building spider Tetragnatha 
-# extensa L., were assessed, hypothesizing that shifts in the FA-fluxes from 
-# stream to land are mirrored in the spiders depending strongly on aquatic 
-# resources (Kowarik et al. 2021).
-
 # Code sections:
 # 1. Load libraries
 # 2. Emergent aquatic insects
@@ -55,8 +49,8 @@ setwd("C:/R FA Analysis")
 
 library(car) #version 3.1-1, checking linear models assumptions
 library(cowplot) #version 1.1.3, arrange figures
-library(gridExtra) #version 2.3, organize figures
-library(DHARMa) #version 0.4.7. generalized model diagnostics
+library(gridExtra) #version 2.3, organise figures
+library(DHARMa) #version 0.4.7. generalised model diagnostics
 library(dplyr) #version 1.1.3, data manipulation
 library(emmeans) #version 1.8.6 posthoc test
 library(ggplot2) #version 3.4.3, prepare figures
@@ -1153,9 +1147,9 @@ check_collinearity(lme_cray)
 check_singularity(lme_cray) #TRUE
 summary(lme_cray)$varcor #variance of "flume" = 0 
 #random effect structure is not supported by the data
-#change to generalized linear model
+#change to generalised linear model
 
-#Generalized Linear Model
+# Generalised Linear Model
 glm_cray <- glm(cbind(Active, Hidden) ~ Treat + Week,
            family = binomial, data = cray)
 
@@ -1168,7 +1162,7 @@ AIC(lme_cray,glm_cray, glm_cray0) #glm_cray lowest AIC
 summary(glm_cray)
 
 # ANOVA
-anova(glm_cray, test = "Chisq") #Treat: p=0.042
+Anova(glm_cray, type = "II", test.statistic = "LR") #Treat: p=0.035
 
 #model diagnostics
 sim<- simulateResiduals(fittedModel = glm_cray, plot = F)
@@ -1221,7 +1215,7 @@ cray_plot <- ggplot(cray_sum, aes(x = Status, y = mean, fill = Treat)) +
     legend.text = element_text(size = 14),
     legend.title = element_text(size = 15)
   ) +
-  annotate("text", x = 1.5, y = 105, label = "GLM: p = 0.0", size = 5) +
+  annotate("text", x = 1.5, y = 105, label = "GLM: p = 0.035", size = 5) +
   coord_cartesian(ylim = c(0, 110)) 
 cray_plot
 dev.off()
@@ -1229,7 +1223,7 @@ dev.off()
 ## 5.2. FA content in chironomids ----
 
 #Calculation of mean concentrations and standard deviation of FA groups 
-#content in chironomids. The obtained data is presented as Table S5. 
+#content in chironomids. The obtained data are presented in Table S5. 
 
 ##security copy from L.269
 
@@ -1322,3 +1316,4 @@ summary_epa_sp <- spider %>%
             count = n())
 
 ###
+
